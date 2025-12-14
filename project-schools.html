@@ -1,1 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Philadelphia Schools & Bike Network | Kadafi El-Kardah</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="logo">KADAFI EL-KARDAH</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="project-flint.html">Projects</a>
+      <a href="project-schools.html" class="active">School & Bike Network</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Project Header -->
+  <section class="project-hero">
+    <h1>School & Bike Network Accessibility</h1>
+    <p class="project-question">
+      What Philadelphia School District schools both enroll more than 1,200 students and are within 0.1 mile of the bike network?
+    </p>
+  </section>
+
+  <!-- Project Content -->
+  <main class="project-content">
+
+    <section>
+      <h2>Project Overview</h2>
+      <p>
+        This GIS analysis explores school accessibility and transportation equity in Philadelphia.
+        Using enrollment data and the city’s bike network, this project identifies large district schools
+        that are well connected to bicycle infrastructure. These locations may represent opportunities
+        for improved student mobility, safety planning, and sustainable transportation investment.
+      </p>
+    </section>
+
+    <section>
+      <h2>Breaking Down the Problem</h2>
+      <p><strong>The What:</strong> Philadelphia School District schools</p>
+      <ol>
+        <li>Identify schools with enrollment greater than <strong>1,200 students</strong></li>
+        <li>From that selection, identify schools located within <strong>0.1 mile</strong> of the bike network</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>GIS Methods Used</h2>
+      <ul>
+        <li><strong>Select by Attributes</strong> to identify district schools with enrollment over 1,200</li>
+        <li><strong>Select by Location</strong> to find schools within 0.1 mile of the bike network</li>
+        <li><strong>Subset Selection</strong> to refine results from the initial attribute query</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Results</h2>
+      <p class="highlight">
+        <strong>Solution:</strong> Five schools across four neighborhoods met both criteria.
+      </p>
+      <ul>
+        <li><strong>Central High School</strong> — Logan</li>
+        <li><strong>Solis-Cohen, Solomon School</strong> — Oxford Circle</li>
+        <li><strong>Anne Frank Elementary School</strong> — Bustleton</li>
+        <li><strong>Baldi Middle School</strong> — Bustleton</li>
+        <li><strong>Frankford High School</strong> — Frankford</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>GIS Workflow Diagram</h2>
+      <figure>
+        <img src="websitemyplanschool.jpg" alt="Philadelphia Schools and Bike Network GIS Workflow" class="project-map" />
+        <figcaption>
+          GIS workflow showing attribute and location-based selection steps
+        </figcaption>
+      </figure>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Kadafi El-Kardah | GIS Portfolio</p>
+  </footer>
+
+</body>
+</html>
 
