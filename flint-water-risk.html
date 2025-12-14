@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flint, Michigan Water Risk Analysis | Kadafi El-Kardah</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="logo">KADAFI EL-KARDAH</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="project-flint.html" class="active">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Project Header -->
+  <section class="project-hero">
+    <h1>Flint, Michigan Water Risk Analysis</h1>
+    <p class="project-question">Who is most at risk of drinking poisonous tap water?</p>
+  </section>
+
+  <!-- Project Content -->
+  <main class="project-content">
+
+    <section>
+      <h2>Project Overview</h2>
+      <p>
+        The Flint water crisis is one of the most well-known environmental justice issues in the United States.
+        Using data provided by the University of Michigan, this project uses GIS analysis to identify which
+        areas and populations in Flint, Michigan are most at risk of exposure to toxic drinking water.
+      </p>
+    </section>
+
+    <section>
+      <h2>Data Sources</h2>
+      <ul>
+        <li><strong>Michigan Rivers</strong> – Line dataset containing geographic information about rivers in Michigan.</li>
+        <li><strong>Michigan TRI Facilities</strong> – Toxic Release Inventory table with spatial locations of facilities producing toxic waste.</li>
+        <li><strong>Service Line Data</strong> – Polygon dataset describing the material composition of water service lines in Flint.</li>
+        <li><strong>TRI Water Pollution</strong> – Table containing TRI facility IDs and water emissions (tons).</li>
+        <li><strong>Ward Boundaries</strong> – Polygon dataset representing the geographic extent of Flint wards.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Problem Statement & Criteria</h2>
+      <p>To determine who is most at risk, I analyzed areas that met all three of the following criteria:</p>
+      <ol>
+        <li>Within <strong>0.3 miles</strong> of a TRI facility with water pollution exceeding <strong>10,000 tons</strong></li>
+        <li>Within <strong>0.3 miles</strong> of a river</li>
+        <li>Within <strong>0.2 miles</strong> of water service lines made of <strong>lead</strong></li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>GIS Workflow</h2>
+      <p>
+        The analysis involved projecting all datasets to a common coordinate system, joining TRI tables
+        to facility locations, selecting high-pollution facilities, creating multiple buffer layers,
+        clipping results to Flint city boundaries, and intersecting all criteria layers. A spatial join
+        with ward boundaries allowed demographic patterns to be analyzed.
+      </p>
+    </section>
+
+    <section>
+      <h2>Results</h2>
+      <p class="highlight">
+        <strong>Solution:</strong> The analysis shows that <strong>Ward 5</strong> is the area most at risk of drinking poisonous tap water.
+      </p>
+    </section>
+
+    <section>
+      <h2>Final Map</h2>
+      <figure>
+        <img src="WEBSITEmyPLAN3.jpg" alt="Flint Michigan Water Risk Analysis Map" class="project-map" />
+        <figcaption>
+          Designed by Kadafi El-Kardah | Source: University of Michigan
+        </figcaption>
+      </figure>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Kadafi El-Kardah | GIS Portfolio</p>
+  </footer>
+
+</body>
+</html>
 
