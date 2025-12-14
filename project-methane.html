@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Methane Producing Landfills | Kadafi El-Kardah</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="logo">KADAFI EL-KARDAH</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="project-flint.html">Projects</a>
+      <a href="project-methane.html" class="active">Methane & Landfills</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Project Header -->
+  <section class="project-hero">
+    <h1>Methane Producing Landfills</h1>
+    <p class="project-question">
+      What communities and schools may be most at risk due to proximity to methane-producing landfills?
+    </p>
+  </section>
+
+  <!-- Project Content -->
+  <main class="project-content">
+
+    <section>
+      <h2>Project Overview</h2>
+      <p>
+        Studies have shown that methane exposure can have negative impacts on human health, particularly
+        for children and young adults. This GIS project raises awareness around potential environmental
+        justice concerns by examining the proximity of methane-producing landfills to schools and
+        colleges in Los Angeles, and analyzing how income levels intersect with environmental risk.
+      </p>
+    </section>
+
+    <section>
+      <h2>Data Layers Used</h2>
+      <ul>
+        <li><strong>Schools, Colleges, and Universities</strong> – Contains school level, type, name, address, city, and organization.</li>
+        <li><strong>Methane Producing Landfills</strong> – Spatial data identifying the name and location of methane-producing landfills.</li>
+        <li><strong>Income per Capita (Census Tracts)</strong> – Census tract data containing income per capita values for the Los Angeles area.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Analysis Questions</h2>
+      <ol>
+        <li>Which schools located in the City of Los Angeles are within <strong>0.5 kilometers</strong> of methane-producing landfills?</li>
+        <li>Which census tracts contain these schools, and are they among the <strong>lower 50%</strong> in income per capita?</li>
+        <li>What is the <strong>wealthiest census tract</strong> (by income per capita) that contains a landfill?</li>
+        <li>What is the <strong>closest methane-producing landfill</strong> to Topeka Charter School for Advanced Studies?</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>GIS Methods Used</h2>
+      <ul>
+        <li><strong>Select by Attributes</strong> to identify schools located in the City of Los Angeles</li>
+        <li><strong>Buffer Analysis</strong> (0.5 km) around methane-producing landfills</li>
+        <li><strong>Select by Location</strong> to identify schools within landfill buffer zones</li>
+        <li><strong>Spatial Join</strong> to associate schools with census tract income data</li>
+        <li><strong>Statistical Classification</strong> to identify census tracts in the lower 50% of income per capita</li>
+        <li><strong>Near / Distance Analysis</strong> to determine closest landfill to a selected school</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Results</h2>
+      <p>
+        The analysis identified multiple schools located near methane-producing landfills within
+        the City of Los Angeles. When intersected with income data, several of these schools were
+        found within census tracts that fall in the lower 50 percent of income per capita, highlighting
+        potential environmental justice concerns.
+      </p>
+      <p class="highlight">
+        <strong>Part 3 – Key Finding:</strong> The closest methane-producing landfill to <strong>Topeka Charter School for Advanced Studies</strong>
+        is the <strong>Granada Hills Street Maintenance District Yard</strong>, located slightly over <strong>5,000 feet</strong> away.
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Kadafi El-Kardah | GIS Portfolio</p>
+  </footer>
+
+</body>
+</html>
